@@ -1,0 +1,18 @@
+[{
+    "status": 0,
+    "screen": 0,
+    "title": "新年愿望(1)",
+    "img": "images/screen-small1.gif"
+},
+{
+    "screen": 1,
+    "title": "新年愿望(2)",
+    "img": "images/screen-small1.gif",
+    "status": 0
+},
+{
+    "screen": 2,
+    "title": "新年愿望(3)",
+    "img": "images/screen-small1.gif",
+    "status": 1
+}]

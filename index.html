@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <!--[if IE 6]>
+        <script type="text/javascript">
+            window.location="http://192.168.102.42/www/publish/ViewNews.view.x?newsId=84858";
+        </script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style/css/style.css" />
+    <script type="text/javascript" src="style/js/lib/json2.js"></script>
+    <script type="text/javascript" src="style/js/lib/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="style/js/lib/mustache.js"></script>
+    <script type="text/javascript" src="style/js/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="style/js/lib/backbone-min.js"></script>
+    <script type="text/javascript" src="style/js/lib/jquery.zclip.min.js"></script>
+    <title>DEMO - christmas-puzzle</title>
+</head>
+<body>
+    <h1>Christmas Puzzle</h1>
+    <div id="normal">
+    <div id="header">
+        <div id="tips">
+            读取中...
+        </div>
+        <ul id="nav">
+            <li><a href="http://192.168.102.42/www/index" target="_blank">42首页</a></li>|
+            <li><a href="#screen" class="highnav">选择拼图</a></li>|
+            <li><a href="cover.html" target="_blank">游戏规则</a></li>|
+            <li><a href="##">礼物来自</a></li>
+        </ul>
+    </div>
+    <div id="puzzle">
+        <ul class="puzzle-screen">
+        </ul>
+        <div id="puzzle-info">
+            <div id="puzzle-message">
+            </div>
+            <div id="puzzle-form">
+                <form>
+                    <span id="form-cancel">x</span>
+                    <dl>
+                        <dt>你的昵称：</dt>
+                        <dd><input type="text" name="nickname"/></dd>
+                        <dt>祝福的人：</dt>
+                        <dd><input type="text" name="to"/></dd>
+                        <dt class="high">想说的话：<span>（200字以内）</span></dt>
+                        <dd class="high"><textarea type="text" name="message" maxlength="200"></textarea></dd>
+                    </dl>
+                    <input type="submit" value="提 交" />
+                    <p class="gift">礼物来自：新浪微博 / 人人网 / 万达影院</p>
+                </form>
+            </div>
+        </div>
+        <div id="alertbg"></div>
+        <div id="alertex"></div>
+        <a id="prevScreen" class="screen-to">&lt;</a>
+        <a id="nextScreen" class="screen-to">&gt;</a>
+    </div>
+    <div id="mini"></div>
+    </div>
+    <div id="screen-list">
+        <h2>欢迎来到拼图世界</h2>
+        <div id="list-ul"></div>
+        <a id="prevList" class="screen-to">&lt;</a>
+        <a id="nextList" class="screen-to">&gt;</a>
+    </div>
+    <div id="footer">因为42，所以精彩 - Copyright 2012 By 42Team</div>
+    <script src="style/js/fun.puzzle.gogu.js"></script>
+</body>
+</html>
