@@ -32,7 +32,7 @@
     var ScreenView = Backbone.View.extend({
         el: $(".puzzle-screen"),
         tagName: "li",
-        sum: 391,
+        sum: 392,
         limit: 242,
         counter: 1,
         template: function() {
@@ -56,7 +56,8 @@
             var here = 0,
                 _this = this;
             $(this.el).html(this.template()).css("backgroundImage", "none");
-            $(".frag")
+            var $frag = $(".frag");
+            $frag
                 .addClass("pointer")
                 .bind("mouseenter", function() { 
                     $(this).children(".bgon").stop().show(); 
@@ -198,10 +199,12 @@
                 return e.get("nindex") === index;
             });
             this.aid = data[0].id;
-            $(this.el).html(this.template(data[0].toJSON())).fadeIn(400);
-            $(this.el).removeClass();
+            $el = $(this.el);
+            $el
+                .html(this.template(data[0].toJSON())).fadeIn(400);
+                .removeClass();
             var tempbg = "randombg" + parseInt(Math.random()*4);
-            $(this.el).addClass(tempbg);
+            $el.addClass(tempbg);
             $("#puzzle-info").fadeIn(200);
             if (window.clipboardData) {
                 $('#paste').live("click", function() {
