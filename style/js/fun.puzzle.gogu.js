@@ -201,7 +201,7 @@
             this.aid = data[0].id;
             $el = $(this.el);
             $el
-                .html(this.template(data[0].toJSON())).fadeIn(400);
+                .html(this.template(data[0].toJSON())).fadeIn(400)
                 .removeClass();
             var tempbg = "randombg" + parseInt(Math.random()*4);
             $el.addClass(tempbg);
